@@ -10,11 +10,58 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  background-color: rgba(183, 118, 250, 1);
+  background-image: linear-gradient(
+    90deg,
+    rgba(183, 118, 250, 1) 0%,
+    rgba(226, 148, 255, 1) 100%
+  );
 }
 
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
-  margin-bottom: 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 5px 0.2px rgb(93, 3, 116);
+}
+
+.country-list {
+  padding: 0;
+  list-style: none;
+}
+
+.country-list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.country-flag {
+  width: 32px;
+}
+
+.country-name {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.country-flag-single {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.country-name-single {
+  font-size: 24px;
+}
+
+.span-info {
+  font-size: 24px;
+  font-weight: 700;
 }
